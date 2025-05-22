@@ -3,8 +3,6 @@ import { useEffect } from "react";
 import s from "./ImageModal.module.css";
 import type { UnsplashImage } from "../../services/types";
 
-Modal.setAppElement("#root");
-
 interface Props {
   image: UnsplashImage;
   onClose: () => void;
@@ -21,6 +19,7 @@ const ImageModal = ({ image, onClose }: Props) => {
 
   return (
     <Modal
+      key={image.id}
       isOpen={!!image}
       onRequestClose={onClose}
       className={s.modal}

@@ -6,7 +6,7 @@ import ImageModal from "./components/ImageModal/ImageModal";
 import Loader from "./components/Loader/Loader";
 import ErrorMessage from "./components/ErrorMessage/ErrorMessage";
 import LoadMoreBtn from "./components/LoadMoreBtn/LoadMoreBtn";
-import { fetchImages } from "./services/api";
+import { fetchImages } from "./services/Api";
 import type { UnsplashImage } from "./services/types";
 
 function App() {
